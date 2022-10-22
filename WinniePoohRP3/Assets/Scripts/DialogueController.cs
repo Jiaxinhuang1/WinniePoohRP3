@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Events;
 using System;
 public class DialogueController : MonoBehaviour
 {
@@ -19,22 +20,12 @@ public class DialogueController : MonoBehaviour
     private bool isRunning;
     public float textSpeed;
 
-    [HideInInspector] public string soSceneName;
+    public UnityEvent EndDialogueFunction;
 
     // Start is called before the first frame update
     void Start()
     {
-        /* Testing substrings
-        for (int i = 0; i < hubDialogueSO.firstDialogues.Length; i ++)
-        {
-            int separatorIndex = hubDialogueSO.firstDialogues[i].IndexOf(":");
-            string name = hubDialogueSO.firstDialogues[i].Substring(0, separatorIndex);
-            string dialogue = hubDialogueSO.firstDialogues[i].Substring(separatorIndex + 1);
-            Debug.Log(name + " says" + dialogue);
-        }
-        */
         sentences = new Queue<string>();
-        //StartDialogue(hubDialogueSO.firstDialogues);
         Debug.Log("YAY I STARTED");
     }
 
@@ -102,7 +93,6 @@ public class DialogueController : MonoBehaviour
 
             if (input && !oldInput)
             {
-                // consume input
                 oldInput = input;
                 dialogueText.maxVisibleCharacters = sentence.Length;
             }
@@ -118,6 +108,7 @@ public class DialogueController : MonoBehaviour
         {
             Debug.Log("Dialogue Ended");
             LeanTween.scaleY(dialoguePanel, 0, 0.2f);
+            EndDialogueFunction.Invoke();
             isDialogueOn = false;
         }
     }
