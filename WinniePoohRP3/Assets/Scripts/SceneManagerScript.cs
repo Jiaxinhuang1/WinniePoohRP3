@@ -19,8 +19,19 @@ public class SceneManagerScript : MonoBehaviour
         }
     }
 
+    public void Start()
+    {
+        Debug.Log(PlayerPrefs.GetInt("HoleNumber", 0));
+    }
+
     public void ChangeScene(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
+    }
+
+    [ContextMenu("ResetPlayerPrefs")]
+    public void ResetPlayerPrefs()
+    {
+        PlayerPrefs.DeleteAll();
     }
 }

@@ -5,7 +5,9 @@ using UnityEngine.UI;
 
 public class CharTrigger : MonoBehaviour
 {
-    [TextArea(5,10)]
+    public string nameDia;
+    public Sprite imageDia;
+    [TextArea(5, 10)]
     public string[] dialogues;
     public bool isEvil;
     public GameObject cutscenePanel;
@@ -24,7 +26,7 @@ public class CharTrigger : MonoBehaviour
 
     public void Talk()
     {
-        DialogueManager.instance.PlayDialogue(this.gameObject.name, this.gameObject.GetComponent<Image>().sprite, dialogues);
+        DialogueManager.instance.PlayDialogue(nameDia, imageDia, dialogues);
         if (isEvil)
         {
             dialogueScript.EndDialogueFunction.AddListener(() => cutscenePanel.SetActive(true));
