@@ -635,6 +635,10 @@ PrefabInstance:
       value: Pooh
       objectReference: {fileID: 0}
     - target: {fileID: 1577994624609505174, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
+      propertyPath: imageDia
+      value: 
+      objectReference: {fileID: 21300000, guid: e2b692acc99ee3740aae28c9f30b94a0, type: 3}
+    - target: {fileID: 1577994624609505174, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
       propertyPath: cutscenePanel
       value: 
       objectReference: {fileID: 689906741}
@@ -657,6 +661,14 @@ PrefabInstance:
     - target: {fileID: 1577994624609505174, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
       propertyPath: dialogues.Array.data[2]
       value: Yummy yum yum
+      objectReference: {fileID: 0}
+    - target: {fileID: 1577994625983580327, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
+      propertyPath: m_text
+      value: Eat
+      objectReference: {fileID: 0}
+    - target: {fileID: 1577994626085427407, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
+      propertyPath: m_Name
+      value: EatButton
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
@@ -1026,6 +1038,10 @@ PrefabInstance:
       value: Pooh
       objectReference: {fileID: 0}
     - target: {fileID: 1577994624609505174, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
+      propertyPath: imageDia
+      value: 
+      objectReference: {fileID: 21300000, guid: e2b692acc99ee3740aae28c9f30b94a0, type: 3}
+    - target: {fileID: 1577994624609505174, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
       propertyPath: cutscenePanel
       value: 
       objectReference: {fileID: 39849162}
@@ -1048,6 +1064,14 @@ PrefabInstance:
     - target: {fileID: 1577994624609505174, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
       propertyPath: dialogues.Array.data[2]
       value: Yummy yum yum
+      objectReference: {fileID: 0}
+    - target: {fileID: 1577994625983580327, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
+      propertyPath: m_text
+      value: Eat
+      objectReference: {fileID: 0}
+    - target: {fileID: 1577994626085427407, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
+      propertyPath: m_Name
+      value: EatButton
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
@@ -6299,6 +6323,10 @@ PrefabInstance:
       value: Pooh
       objectReference: {fileID: 0}
     - target: {fileID: 1577994624609505174, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
+      propertyPath: imageDia
+      value: 
+      objectReference: {fileID: 21300000, guid: e2b692acc99ee3740aae28c9f30b94a0, type: 3}
+    - target: {fileID: 1577994624609505174, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
       propertyPath: cutscenePanel
       value: 
       objectReference: {fileID: 39849162}
@@ -6321,6 +6349,14 @@ PrefabInstance:
     - target: {fileID: 1577994624609505174, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
       propertyPath: dialogues.Array.data[2]
       value: Yummy yum yum
+      objectReference: {fileID: 0}
+    - target: {fileID: 1577994625983580327, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
+      propertyPath: m_text
+      value: Eat
+      objectReference: {fileID: 0}
+    - target: {fileID: 1577994626085427407, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
+      propertyPath: m_Name
+      value: EatButton
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
@@ -6632,11 +6668,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1577994624609505169, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 97.5085
+      value: 110
       objectReference: {fileID: 0}
     - target: {fileID: 1577994624609505169, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 100
+      value: 110
       objectReference: {fileID: 0}
     - target: {fileID: 1577994624609505169, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6687,16 +6723,24 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1577994624609505172, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1577994624609505172, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 08092f2fc6c72d747895d98f6b4e2351, type: 3}
+    - target: {fileID: 1577994624609505172, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
       propertyPath: m_Color.b
-      value: 0.023923118
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1577994624609505172, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
       propertyPath: m_Color.g
-      value: 0.29248038
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1577994624609505172, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
       propertyPath: m_Color.r
-      value: 0.4528302
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1577994624609505174, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
       propertyPath: isEvil
@@ -6706,6 +6750,10 @@ PrefabInstance:
       propertyPath: nameDia
       value: Eeyore
       objectReference: {fileID: 0}
+    - target: {fileID: 1577994624609505174, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
+      propertyPath: imageDia
+      value: 
+      objectReference: {fileID: 21300000, guid: 08092f2fc6c72d747895d98f6b4e2351, type: 3}
     - target: {fileID: 1577994624609505174, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
       propertyPath: cutscenePanel
       value: 
@@ -7429,7 +7477,6 @@ GameObject:
   - component: {fileID: 1938391964}
   - component: {fileID: 1938391967}
   - component: {fileID: 1938391966}
-  - component: {fileID: 1938391965}
   - component: {fileID: 1938391968}
   - component: {fileID: 1938391969}
   m_Layer: 5
@@ -7457,28 +7504,8 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -60, y: -2170}
-  m_SizeDelta: {x: 54, y: 81}
+  m_SizeDelta: {x: 110, y: 110}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!95 &1938391965
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1938391963}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 781791761e766704480c1d135ed0c14d, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &1938391966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7499,7 +7526,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -699654685, guid: 81237f37f10ab254bb0648e44afa1f78, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e2b692acc99ee3740aae28c9f30b94a0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8674,11 +8701,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1577994624609505169, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 97.5085
+      value: 110
       objectReference: {fileID: 0}
     - target: {fileID: 1577994624609505169, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 100
+      value: 110
       objectReference: {fileID: 0}
     - target: {fileID: 1577994624609505169, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8728,6 +8755,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1577994624609505172, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1577994624609505172, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c3ae3a10f9401124e8876cda31ba9bce, type: 3}
+    - target: {fileID: 1577994624609505172, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
+      propertyPath: m_Color.b
+      value: 0.9811321
+      objectReference: {fileID: 0}
+    - target: {fileID: 1577994624609505172, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
+      propertyPath: m_Color.g
+      value: 0.9811321
+      objectReference: {fileID: 0}
+    - target: {fileID: 1577994624609505172, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
+      propertyPath: m_Color.r
+      value: 0.9811321
+      objectReference: {fileID: 0}
+    - target: {fileID: 1577994624609505174, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
+      propertyPath: nameDia
+      value: Piglet
+      objectReference: {fileID: 0}
+    - target: {fileID: 1577994624609505174, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
+      propertyPath: imageDia
+      value: 
+      objectReference: {fileID: 21300000, guid: c3ae3a10f9401124e8876cda31ba9bce, type: 3}
     - target: {fileID: 1577994624609505174, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
       propertyPath: dialogueScript
       value: 
