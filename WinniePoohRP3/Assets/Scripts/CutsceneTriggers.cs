@@ -25,4 +25,9 @@ public class CutsceneTriggers : MonoBehaviour
     {
         SceneManager.LoadScene("Level");
     }
+
+    public void ReCombat()
+    {
+        SceneManager.LoadScene("Combat");
+    }
 }

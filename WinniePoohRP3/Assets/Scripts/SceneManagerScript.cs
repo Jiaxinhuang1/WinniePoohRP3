@@ -24,9 +24,26 @@ public class SceneManagerScript : MonoBehaviour
         Debug.Log(PlayerPrefs.GetInt("HoleNumber", 0));
     }
 
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
     public void ChangeScene(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
+    }
+
+    public void OpenPanel(GameObject go)
+    {
+        go.transform.localScale = new Vector3(0, 1, 1);
+        go.SetActive(true);
+        LeanTween.scaleX(go, 1, 0.15f);
+    }
+
+    public void ClosePanel(GameObject go)
+    {
+        LeanTween.scaleX(go, 0, 0.15f).setOnComplete(() => go.SetActive(false));
     }
 
     [ContextMenu("ResetPlayerPrefs")]
