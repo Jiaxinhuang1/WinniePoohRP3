@@ -13,7 +13,9 @@ public class RabbitHole : MonoBehaviour
         {
             GameObject player = GameObject.FindGameObjectWithTag("Player");
             player.transform.position = this.gameObject.transform.position;
-            this.gameObject.SetActive(false);
+            this.gameObject.GetComponent<BoxCollider2D>().enabled = false;
+            this.gameObject.transform.GetChild(0).gameObject.SetActive(false);
+            this.gameObject.transform.GetChild(1).gameObject.SetActive(true);
         }
     }
 
