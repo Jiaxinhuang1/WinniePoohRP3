@@ -379,6 +379,8 @@ MonoBehaviour:
   - {fileID: 1390349511}
   timeSlider: {fileID: 1405614742}
   isTimerOn: 0
+  notificationText: {fileID: 1369683899}
+  spawner: {fileID: 678078664}
 --- !u!1 &265180789
 GameObject:
   m_ObjectHideFlags: 0
@@ -979,7 +981,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &678078665
 Transform:
   m_ObjectHideFlags: 0
