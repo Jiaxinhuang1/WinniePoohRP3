@@ -5,6 +5,7 @@ using UnityEngine;
 public class RabbitHole : MonoBehaviour
 {
     public GameObject holeCutscene;
+    public bool NeedsFight;
     public int holeNum;
     // Start is called before the first frame update
     void Start()
@@ -24,9 +25,16 @@ public class RabbitHole : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            PlayerPrefs.SetInt("HoleNumber", holeNum);
-            this.gameObject.SetActive(false);
-            holeCutscene.SetActive(true);
+            if (NeedsFight)
+            {
+                SceneManagerScript.instance.ChangeScene("Combat");
+            }
+            else
+            {
+                PlayerPrefs.SetInt("HoleNumber", holeNum);
+                this.gameObject.SetActive(false);
+                holeCutscene.SetActive(true);
+            }
         }
     }
 

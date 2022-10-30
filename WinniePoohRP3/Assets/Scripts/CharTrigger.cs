@@ -11,11 +11,11 @@ public class CharTrigger : MonoBehaviour
     public string[] dialogues;
     public bool isEvil;
     public GameObject cutscenePanel;
-    public DialogueController dialogueScript;
+    private DialogueController dialogueScript;
     // Start is called before the first frame update
     void Start()
     {
-        
+        dialogueScript = GameObject.FindGameObjectWithTag("Dialogue").GetComponent<DialogueController>();
     }
 
     // Update is called once per frame
