@@ -15,18 +15,17 @@ public class GameManager : MonoBehaviour
     public float minSpawnSpeed;
     public int difficultyLevel;
     public GameManager.Difficulty difficultyState;
-    public GameObject losePanel;
     public GameObject winPanel;
 
-    [Header("Lives")]
-    public int lifeCount;
-    public GameObject[] dead;
+    [Header("Carrots")]
+    public int carrotCount;
+    public GameObject[] carrots;
 
-    [Header("Timer")]
-    public Slider timeSlider;
-    private float timeRemaining;
-    private const float timerMax = 20f;
-    public bool isTimerOn;
+    //[Header("Timer")]
+    //public Slider timeSlider;
+    //private float timeRemaining;
+    //private const float timerMax = 20f;
+    //public bool isTimerOn;
     public GameObject notificationText;
     public GameObject spawner;
 
@@ -49,21 +48,22 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.SetInt("DifficultyLevel", holeNum);
         difficultyLevel = PlayerPrefs.GetInt("DifficultyLevel", 1);
         ChangeDifficulty();
-        isTimerOn = false;
+        //isTimerOn = false;
         spawner.SetActive(false);
-        lifeCount = dead.Length;
+        carrotCount = 0;
         StartCoroutine(Countdown());
     }
 
     // Update is called once per frame
     void Update()
     {
+        /* This is for timer functionality
         if (isTimerOn)
         {
             timeSlider.value = CalculateSliderValue();
             if (timeRemaining <= 0)
             {
-                if (lifeCount <= 0)
+                if (carrotCount <= 0)
                 {
                     losePanel.SetActive(false);
                 }
@@ -78,12 +78,7 @@ public class GameManager : MonoBehaviour
             {
                 timeRemaining -= Time.deltaTime;
             }
-        }
-    }
-
-    float CalculateSliderValue()
-    {
-        return (timeRemaining / timerMax);
+        }*/
     }
 
     public void ChangeDifficulty()
@@ -103,51 +98,48 @@ public class GameManager : MonoBehaviour
         switch (difficultyState)
         {
             case Difficulty.Easy:
-                minSpawnSpeed = 1.5f;
+                minSpawnSpeed = 1.25f;
                 Debug.Log("Easy Level");
                 Debug.Log("Spawn Speed: " + minSpawnSpeed);
                 break;
             case Difficulty.Medium:
-                minSpawnSpeed = 1f;
+                minSpawnSpeed = 0.5f;
                 Debug.Log("Medium Level");
                 Debug.Log("Spawn Speed: " + minSpawnSpeed);
                 break;
             case Difficulty.Hard:
-                minSpawnSpeed = 0.5f;
+                minSpawnSpeed = 0.25f;
                 Debug.Log("Hard Level");
                 Debug.Log("Spawn Speed: " + minSpawnSpeed);
                 break;
         }
     }
 
-    public void DecreaseLive()
+    public void CollectCarrot()
     {
-        if (lifeCount > 0)
+        carrotCount++;
+        for (int i = 0; i < carrotCount; i++)
         {
-            lifeCount--;
-            for (int i = lifeCount; i < dead.Length; i++)
+            if (i < carrots.Length)
             {
-                dead[i].SetActive(false);
-            }
-            if (lifeCount == 0)
-            {
-                losePanel.SetActive(true);
-                spawner.SetActive(false);
-                isTimerOn = false;
+                carrots[i].SetActive(true);
             }
         }
-        else
+        if (carrotCount >= 10)
         {
-            lifeCount = 0;
+            winPanel.SetActive(true);
+            spawner.SetActive(false);
+            //isTimerOn = false;
         }
     }
 
+    /*
     public void StartTimer()
     {
         timeRemaining = timerMax;
         spawner.SetActive(true);
         isTimerOn = true;
-    }
+    }*/
 
     IEnumerator Countdown()
     {
@@ -162,9 +154,10 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(1);
         notiText.text = "1";
         yield return new WaitForSeconds(1);
-        notiText.text = "Jump!";
+        notiText.text = "Go!";
         yield return new WaitForSeconds(1);
         notificationText.SetActive(false);
-        StartTimer();
+        spawner.SetActive(true);
+        //StartTimer();
     }
 }

@@ -27,7 +27,7 @@ public class Spawner : MonoBehaviour
         {
             float randNum = Random.Range(0, 10);
             float xPos, yPos;
-            if (randNum < 6)
+            if (randNum < 4)
             {
                 xPos = firstPoint.position.x;
                 yPos = firstPoint.position.y;
@@ -41,7 +41,7 @@ public class Spawner : MonoBehaviour
             GameObject item = Instantiate(Resources.Load("Carrot"), position, Quaternion.identity) as GameObject;
             item.transform.SetParent(canvas.transform);
             item.transform.SetAsFirstSibling();
-            yield return new WaitForSeconds(Random.Range(GameManager.instance.minSpawnSpeed, 2f));
+            yield return new WaitForSeconds(Random.Range(GameManager.instance.minSpawnSpeed, 1.5f));
         }
     }
 }

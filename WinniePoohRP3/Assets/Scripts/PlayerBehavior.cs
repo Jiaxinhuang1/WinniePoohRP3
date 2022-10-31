@@ -31,11 +31,10 @@ public class PlayerBehavior : MonoBehaviour
     {
        if (collision.tag == "Carrot")
        {
-            if (!collision.gameObject.GetComponent<CarrotBehavoir>().isHit)
-            {
-                Debug.Log("Ouch");
-                GameManager.instance.DecreaseLive();
-            }
+            Debug.Log("Collecting");
+            Destroy(collision.gameObject);
+            GameManager.instance.CollectCarrot();
+
        }
     }
 }
