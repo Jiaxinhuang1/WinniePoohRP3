@@ -475,6 +475,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Point (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3722676588504330042, guid: 53035bf68d7aa0b4eb01c10963fa0fc2, type: 3}
+      propertyPath: needsTimer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3722676588504330042, guid: 53035bf68d7aa0b4eb01c10963fa0fc2, type: 3}
+      propertyPath: timeSlider
+      value: 
+      objectReference: {fileID: 397852796}
     - target: {fileID: 3722676589019740429, guid: 53035bf68d7aa0b4eb01c10963fa0fc2, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -857,6 +865,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Point (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3722676588504330042, guid: 53035bf68d7aa0b4eb01c10963fa0fc2, type: 3}
+      propertyPath: needsTimer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3722676588504330042, guid: 53035bf68d7aa0b4eb01c10963fa0fc2, type: 3}
+      propertyPath: timeSlider
+      value: 
+      objectReference: {fileID: 397852796}
     - target: {fileID: 3722676589415189475, guid: 53035bf68d7aa0b4eb01c10963fa0fc2, type: 3}
       propertyPath: target
       value: 
@@ -1035,6 +1051,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Point (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 3722676588504330042, guid: 53035bf68d7aa0b4eb01c10963fa0fc2, type: 3}
+      propertyPath: needsTimer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3722676588504330042, guid: 53035bf68d7aa0b4eb01c10963fa0fc2, type: 3}
+      propertyPath: timeSlider
+      value: 
+      objectReference: {fileID: 397852796}
     - target: {fileID: 3722676589019740429, guid: 53035bf68d7aa0b4eb01c10963fa0fc2, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -1156,6 +1180,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7297320403577677462, guid: c8efae192a1bb0842b3bf213d10899f7, type: 3}
   m_PrefabInstance: {fileID: 397852794}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &397852796 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2755050523328819620, guid: c8efae192a1bb0842b3bf213d10899f7, type: 3}
+  m_PrefabInstance: {fileID: 397852794}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &414027946 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3722676588504330039, guid: 53035bf68d7aa0b4eb01c10963fa0fc2, type: 3}
@@ -2859,6 +2894,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Point (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 3722676588504330042, guid: 53035bf68d7aa0b4eb01c10963fa0fc2, type: 3}
+      propertyPath: needsTimer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3722676588504330042, guid: 53035bf68d7aa0b4eb01c10963fa0fc2, type: 3}
+      propertyPath: timeSlider
+      value: 
+      objectReference: {fileID: 397852796}
     - target: {fileID: 3722676589415189475, guid: 53035bf68d7aa0b4eb01c10963fa0fc2, type: 3}
       propertyPath: target
       value: 
@@ -2970,6 +3013,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Point (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 3722676588504330042, guid: 53035bf68d7aa0b4eb01c10963fa0fc2, type: 3}
+      propertyPath: needsTimer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3722676588504330042, guid: 53035bf68d7aa0b4eb01c10963fa0fc2, type: 3}
+      propertyPath: timeSlider
+      value: 
+      objectReference: {fileID: 397852796}
     - target: {fileID: 3722676589019740429, guid: 53035bf68d7aa0b4eb01c10963fa0fc2, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -3662,6 +3713,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Point (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 3722676588504330042, guid: 53035bf68d7aa0b4eb01c10963fa0fc2, type: 3}
+      propertyPath: needsTimer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3722676588504330042, guid: 53035bf68d7aa0b4eb01c10963fa0fc2, type: 3}
+      propertyPath: timeSlider
+      value: 
+      objectReference: {fileID: 397852796}
     - target: {fileID: 3722676589019740429, guid: 53035bf68d7aa0b4eb01c10963fa0fc2, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -3899,6 +3958,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Point (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3722676588504330042, guid: 53035bf68d7aa0b4eb01c10963fa0fc2, type: 3}
+      propertyPath: needsTimer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3722676588504330042, guid: 53035bf68d7aa0b4eb01c10963fa0fc2, type: 3}
+      propertyPath: timeSlider
+      value: 
+      objectReference: {fileID: 397852796}
     - target: {fileID: 3722676589223425363, guid: 53035bf68d7aa0b4eb01c10963fa0fc2, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -4517,6 +4584,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Point (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 3722676588504330042, guid: 53035bf68d7aa0b4eb01c10963fa0fc2, type: 3}
+      propertyPath: needsTimer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3722676588504330042, guid: 53035bf68d7aa0b4eb01c10963fa0fc2, type: 3}
+      propertyPath: timeSlider
+      value: 
+      objectReference: {fileID: 397852796}
     - target: {fileID: 3722676589019740429, guid: 53035bf68d7aa0b4eb01c10963fa0fc2, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -4723,6 +4798,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Point (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 3722676588504330042, guid: 53035bf68d7aa0b4eb01c10963fa0fc2, type: 3}
+      propertyPath: needsTimer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3722676588504330042, guid: 53035bf68d7aa0b4eb01c10963fa0fc2, type: 3}
+      propertyPath: timeSlider
+      value: 
+      objectReference: {fileID: 397852796}
     - target: {fileID: 3722676589019740429, guid: 53035bf68d7aa0b4eb01c10963fa0fc2, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -4858,6 +4941,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Point (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 3722676588504330042, guid: 53035bf68d7aa0b4eb01c10963fa0fc2, type: 3}
+      propertyPath: needsTimer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3722676588504330042, guid: 53035bf68d7aa0b4eb01c10963fa0fc2, type: 3}
+      propertyPath: timeSlider
+      value: 
+      objectReference: {fileID: 397852796}
     - target: {fileID: 3722676589019740429, guid: 53035bf68d7aa0b4eb01c10963fa0fc2, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -4977,6 +5068,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Point (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 3722676588504330042, guid: 53035bf68d7aa0b4eb01c10963fa0fc2, type: 3}
+      propertyPath: needsTimer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3722676588504330042, guid: 53035bf68d7aa0b4eb01c10963fa0fc2, type: 3}
+      propertyPath: timeSlider
+      value: 
+      objectReference: {fileID: 397852796}
     - target: {fileID: 3722676589415189475, guid: 53035bf68d7aa0b4eb01c10963fa0fc2, type: 3}
       propertyPath: target
       value: 

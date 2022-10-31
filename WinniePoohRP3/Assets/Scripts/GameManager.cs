@@ -147,7 +147,6 @@ public class GameManager : MonoBehaviour
         timeRemaining = timerMax;
         spawner.SetActive(true);
         isTimerOn = true;
-        //bubbleMaker.makeBubbles = true;
     }
 
     IEnumerator Countdown()
