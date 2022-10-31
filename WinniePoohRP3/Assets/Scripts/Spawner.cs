@@ -41,7 +41,7 @@ public class Spawner : MonoBehaviour
             GameObject item = Instantiate(Resources.Load("Carrot"), position, Quaternion.identity) as GameObject;
             item.transform.SetParent(canvas.transform);
             item.transform.SetAsFirstSibling();
-            yield return new WaitForSeconds(Random.Range(GameManager.instance.minSpawnSpeed, 3f));
+            yield return new WaitForSeconds(Random.Range(GameManager.instance.minSpawnSpeed, 2f));
         }
     }
 }

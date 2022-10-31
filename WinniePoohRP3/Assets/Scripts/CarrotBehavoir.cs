@@ -9,7 +9,7 @@ public class CarrotBehavoir : MonoBehaviour
     void Start()
     {
         isHit = false;
-        float moveTime = Random.Range(1f, 3f); 
+        float moveTime = Random.Range(1.5f, 4f); 
         LeanTween.moveX(this.gameObject.GetComponent<RectTransform>(), -1000, moveTime).setDestroyOnComplete(true);
     }
 

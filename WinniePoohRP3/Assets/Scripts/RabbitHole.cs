@@ -34,6 +34,7 @@ public class RabbitHole : MonoBehaviour
                 PlayerPrefs.SetInt("HoleNumber", holeNum);
                 this.gameObject.SetActive(false);
                 holeCutscene.SetActive(true);
+                SceneManagerScript.instance.ChangeScene("Cave");
             }
         }
     }

@@ -103,7 +103,7 @@ public class GameManager : MonoBehaviour
         switch (difficultyState)
         {
             case Difficulty.Easy:
-                minSpawnSpeed = 2f;
+                minSpawnSpeed = 1.5f;
                 Debug.Log("Easy Level");
                 Debug.Log("Spawn Speed: " + minSpawnSpeed);
                 break;
