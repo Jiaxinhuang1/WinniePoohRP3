@@ -27,6 +27,7 @@ public class RabbitHole : MonoBehaviour
         {
             if (NeedsFight)
             {
+                PlayerPrefs.SetInt("HoleNumber", holeNum);
                 SceneManagerScript.instance.ChangeScene("Combat");
             }
             else
