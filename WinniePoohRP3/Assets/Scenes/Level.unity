@@ -3893,7 +3893,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1577994624609505169, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1577994624609505169, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
       propertyPath: m_AnchorMax.x
@@ -4013,11 +4013,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1577994624609505174, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
       propertyPath: dialogues.Array.data[0]
-      value: Yucky this has a weird taste
+      value: "Oh bother\u2026 "
       objectReference: {fileID: 0}
     - target: {fileID: 1577994624609505174, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
       propertyPath: dialogues.Array.data[1]
-      value: blurghh
+      value: "My tummy aches\u2026 "
       objectReference: {fileID: 0}
     - target: {fileID: 1577994624609505174, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
       propertyPath: dialogues.Array.data[2]
@@ -5160,7 +5160,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1577994624609505169, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 1577994624609505169, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
       propertyPath: m_AnchorMax.x
@@ -5280,11 +5280,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1577994624609505174, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
       propertyPath: dialogues.Array.data[0]
-      value: Oooooh yummy this taste good
+      value: Oh lots and lots of pots and pots of this sticky, licky stuff!
       objectReference: {fileID: 0}
     - target: {fileID: 1577994624609505174, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
       propertyPath: dialogues.Array.data[1]
-      value: I think I remember piglet being in the top
+      value: Yummy!
       objectReference: {fileID: 0}
     - target: {fileID: 1577994624609505174, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
       propertyPath: dialogues.Array.data[2]
@@ -14838,7 +14838,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1577994624609505169, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1577994624609505169, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
       propertyPath: m_AnchorMax.x
@@ -14954,19 +14954,27 @@ PrefabInstance:
       objectReference: {fileID: 822235009}
     - target: {fileID: 1577994624609505174, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
       propertyPath: dialogues.Array.size
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1577994624609505174, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
       propertyPath: dialogues.Array.data[0]
-      value: Hooot hoooot
+      value: "Piglet\u2026 yes well Piglet could\u2019ve gone to the wood."
       objectReference: {fileID: 0}
     - target: {fileID: 1577994624609505174, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
       propertyPath: dialogues.Array.data[1]
-      value: I am an owl
+      value: Maybe he swam through a river, or fell down a rabbit hole
       objectReference: {fileID: 0}
     - target: {fileID: 1577994624609505174, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
       propertyPath: dialogues.Array.data[2]
-      value: Yummy yum yum
+      value: But where can you find him?
+      objectReference: {fileID: 0}
+    - target: {fileID: 1577994624609505174, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
+      propertyPath: dialogues.Array.data[3]
+      value: 'Why, he is in your heart! '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1577994624609505174, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
+      propertyPath: dialogues.Array.data[4]
+      value: "He will always be in your heart and you can find him there\u2026"
       objectReference: {fileID: 0}
     - target: {fileID: 1577994625983580327, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
       propertyPath: m_hasFontAssetChanged
@@ -16553,7 +16561,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1577994624609505169, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1577994624609505169, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
       propertyPath: m_AnchorMax.x
@@ -16661,19 +16669,20 @@ PrefabInstance:
       objectReference: {fileID: 822235009}
     - target: {fileID: 1577994624609505174, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
       propertyPath: dialogues.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1577994624609505174, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
       propertyPath: dialogues.Array.data[0]
-      value: Heello there I am Tigger
+      value: Once in a while, someone amazing comes along and here I am! Ha ha ha
+        ha!
       objectReference: {fileID: 0}
     - target: {fileID: 1577994624609505174, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
       propertyPath: dialogues.Array.data[1]
-      value: Roaaaar
+      value: "Bouncy trouncy flouncy pouncy let\u2019s have some fun fun fun!"
       objectReference: {fileID: 0}
     - target: {fileID: 1577994624609505174, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
       propertyPath: dialogues.Array.data[2]
-      value: Yummy yum yum
+      value: "Bouncy trouncy flouncy pouncy let\u2019s have some fun fun fun!"
       objectReference: {fileID: 0}
     - target: {fileID: 1577994625983580327, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
       propertyPath: m_hasFontAssetChanged
@@ -25928,7 +25937,7 @@ RectTransform:
   - {fileID: 1809153663}
   - {fileID: 2075230875}
   m_Father: {fileID: 1259626116}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -26032,7 +26041,6 @@ RectTransform:
   - {fileID: 568845150}
   - {fileID: 188298970}
   - {fileID: 1608836024}
-  - {fileID: 1938391964}
   - {fileID: 1946577859}
   - {fileID: 1257907704}
   - {fileID: 753487401}
@@ -26044,6 +26052,7 @@ RectTransform:
   - {fileID: 5212968977139441534}
   - {fileID: 1826419450}
   - {fileID: 2016094228}
+  - {fileID: 1938391964}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -31961,7 +31970,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.764151, g: 0.764151, b: 0.764151, a: 0}
+  m_BackGroundColor: {r: 0.6535462, g: 0.6981132, b: 0.61644715, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -34637,7 +34646,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1577994624609505169, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1577994624609505169, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
       propertyPath: m_AnchorMax.x
@@ -34757,11 +34766,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1577994624609505174, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
       propertyPath: dialogues.Array.data[0]
-      value: Oooooh yummy this taste good
+      value: 'Oh lots and lots of pots and pots of this sticky, licky stuff! '
       objectReference: {fileID: 0}
     - target: {fileID: 1577994624609505174, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
       propertyPath: dialogues.Array.data[1]
-      value: I think I remember piglet being in the top
+      value: Yummy!
       objectReference: {fileID: 0}
     - target: {fileID: 1577994624609505174, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
       propertyPath: dialogues.Array.data[2]
@@ -37597,7 +37606,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1577994624609505169, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 1577994624609505169, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
       propertyPath: m_AnchorMax.x
@@ -37713,19 +37722,19 @@ PrefabInstance:
       objectReference: {fileID: 822235009}
     - target: {fileID: 1577994624609505174, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
       propertyPath: dialogues.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1577994624609505174, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
       propertyPath: dialogues.Array.data[0]
-      value: I think I am the donkey?
+      value: "Could be worse\u2026 not sure how but it could be."
       objectReference: {fileID: 0}
     - target: {fileID: 1577994624609505174, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
       propertyPath: dialogues.Array.data[1]
-      value: I am not sure
+      value: I think Piglet went somewhere towards the top of the forest.
       objectReference: {fileID: 0}
     - target: {fileID: 1577994624609505174, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
       propertyPath: dialogues.Array.data[2]
-      value: Yummy yum yum
+      value: It never hurts to keep looking for sunshine.
       objectReference: {fileID: 0}
     - target: {fileID: 1577994625954405581, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
       propertyPath: m_IsActive
@@ -39323,7 +39332,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 160845972911517143, guid: 48edbb89ad10b444a9bc46517bb73f2f, type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 160845972911517143, guid: 48edbb89ad10b444a9bc46517bb73f2f, type: 3}
       propertyPath: m_AnchorMax.x
@@ -43589,7 +43598,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 160845972911517143, guid: 48edbb89ad10b444a9bc46517bb73f2f, type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 160845972911517143, guid: 48edbb89ad10b444a9bc46517bb73f2f, type: 3}
       propertyPath: m_AnchorMax.x
@@ -46976,7 +46985,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1577994624609505169, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1577994624609505169, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
       propertyPath: m_AnchorMax.x
@@ -47244,7 +47253,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 160845972911517143, guid: 48edbb89ad10b444a9bc46517bb73f2f, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 160845972911517143, guid: 48edbb89ad10b444a9bc46517bb73f2f, type: 3}
       propertyPath: m_AnchorMax.x
@@ -47373,7 +47382,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7297320403577677462, guid: c8efae192a1bb0842b3bf213d10899f7, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 7297320403577677462, guid: c8efae192a1bb0842b3bf213d10899f7, type: 3}
       propertyPath: m_AnchorMax.x
