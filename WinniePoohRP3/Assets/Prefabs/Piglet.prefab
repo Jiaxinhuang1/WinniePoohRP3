@@ -155,6 +155,7 @@ MonoBehaviour:
   - I like bacons
   - Yummy yum yum
   isEvil: 0
+  isPoohTalking: 0
   cutscenePanel: {fileID: 0}
 --- !u!1 &1577994625211769483
 GameObject:
@@ -193,8 +194,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.3058999, y: -33.298683}
-  m_SizeDelta: {x: 163.7686, y: 50.7573}
+  m_AnchoredPosition: {x: 1.3058999, y: -35.232765}
+  m_SizeDelta: {x: 134.1374, y: 31.0115}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1577994625211769487
 CanvasRenderer:
@@ -224,7 +225,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: da5faec6960182048aa1517d5c214686, type: 3}
+  m_Sprite: {fileID: 497599747, guid: da5faec6960182048aa1517d5c214686, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -500,8 +501,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.2964, y: -0.7014}
-  m_SizeDelta: {x: 163.79, y: 50.4892}
+  m_AnchoredPosition: {x: 1.304, y: -0.9077}
+  m_SizeDelta: {x: 134.1374, y: 31.0115}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1577994626085427443
 CanvasRenderer:
@@ -531,7 +532,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: da5faec6960182048aa1517d5c214686, type: 3}
+  m_Sprite: {fileID: 497599747, guid: da5faec6960182048aa1517d5c214686, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

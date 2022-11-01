@@ -47119,6 +47119,18 @@ PrefabInstance:
       propertyPath: dialogueScript
       value: 
       objectReference: {fileID: 822235009}
+    - target: {fileID: 1577994624609505174, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
+      propertyPath: dialogues.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1577994624609505174, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
+      propertyPath: dialogues.Array.data[0]
+      value: Oh Pooh! I always believed in you.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1577994624609505174, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
+      propertyPath: dialogues.Array.data[1]
+      value: We'll be friends forever, won't we, Pooh?
+      objectReference: {fileID: 0}
     - target: {fileID: 1577994625983580327, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 0
