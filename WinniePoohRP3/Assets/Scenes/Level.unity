@@ -47380,6 +47380,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1259626116}
     m_Modifications:
+    - target: {fileID: 2066447952448772000, guid: c8efae192a1bb0842b3bf213d10899f7, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 436
+      objectReference: {fileID: 0}
+    - target: {fileID: 2066447952448772000, guid: c8efae192a1bb0842b3bf213d10899f7, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 157.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2066447952448772000, guid: c8efae192a1bb0842b3bf213d10899f7, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -16
+      objectReference: {fileID: 0}
+    - target: {fileID: 2066447952448772000, guid: c8efae192a1bb0842b3bf213d10899f7, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 14.87
+      objectReference: {fileID: 0}
     - target: {fileID: 4489975584499839323, guid: c8efae192a1bb0842b3bf213d10899f7, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -47475,6 +47491,22 @@ PrefabInstance:
     - target: {fileID: 7297320403577677462, guid: c8efae192a1bb0842b3bf213d10899f7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8479346773752106500, guid: c8efae192a1bb0842b3bf213d10899f7, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.18867922
+      objectReference: {fileID: 0}
+    - target: {fileID: 8479346773752106500, guid: c8efae192a1bb0842b3bf213d10899f7, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.18867922
+      objectReference: {fileID: 0}
+    - target: {fileID: 8479346773752106500, guid: c8efae192a1bb0842b3bf213d10899f7, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.18867922
+      objectReference: {fileID: 0}
+    - target: {fileID: 8479346773752106500, guid: c8efae192a1bb0842b3bf213d10899f7, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4281348144
       objectReference: {fileID: 0}
     - target: {fileID: 8725293509003712179, guid: c8efae192a1bb0842b3bf213d10899f7, type: 3}
       propertyPath: m_LocalScale.y
