@@ -8,13 +8,19 @@ using System;
 public class DialogueController : MonoBehaviour
 {
     //public HubDialogueSO hubDialogueSO;
+    [Header("Regular Box")]
     private Queue<string> sentences;
     public GameObject dialoguePanel;
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI dialogueText;
     public Image characterImage;
 
+    [Header("Thought Bubble")]
+    public GameObject dialogueBubble;
+    public TextMeshProUGUI poohText;
+
     private bool oldInput;
+    private bool isPooh;
     private bool input;
     public bool isDialogueOn;
     private bool isRunning;
@@ -26,7 +32,6 @@ public class DialogueController : MonoBehaviour
     void Start()
     {
         sentences = new Queue<string>();
-        Debug.Log("YAY I STARTED");
     }
 
     // Update is called once per frame
@@ -43,16 +48,31 @@ public class DialogueController : MonoBehaviour
         }
     }
 
-    public void StartDialogue(string name, Sprite image, string[] dialogue)
+    public void StartDialogue(string name, Sprite image, string[] dialogue, bool isPoohTalking)
     {
+        if (isPoohTalking)
+        {
+            isPooh = true;
+        }
+        else
+        {
+            isPooh = false;
+        }
         if (!isDialogueOn)
         {
             isDialogueOn = true;
             sentences.Clear();
-            LeanTween.scaleY(dialoguePanel, 1, 0.2f);
-            LeanTween.alpha(characterImage.GetComponent<RectTransform>(), 1f, 0.2f).setDelay(0.1f);
-            nameText.text = name;
-            characterImage.sprite = image;
+            if (!isPooh)
+            {
+                LeanTween.scaleY(dialoguePanel, 1, 0.2f);
+                LeanTween.alpha(characterImage.GetComponent<RectTransform>(), 1f, 0.2f).setDelay(0.1f);
+                nameText.text = name;
+                characterImage.sprite = image;
+            }
+            else
+            {
+                LeanTween.scaleY(dialogueBubble, 1, 0.2f);
+            }
             foreach (string sentence in dialogue)
             {
                 sentences.Enqueue(sentence);
@@ -82,19 +102,26 @@ public class DialogueController : MonoBehaviour
     IEnumerator TypeSentence(string sentence)
     {
         isRunning = true;
-
-        dialogueText.text = sentence;
-
-        dialogueText.maxVisibleCharacters = 0;
-
-        for (float t = 0; dialogueText.maxVisibleCharacters < sentence.Length; t += Time.deltaTime)
+        TextMeshProUGUI talkText;
+        if (isPooh)
         {
-            dialogueText.maxVisibleCharacters = (int)(t * textSpeed);
+            talkText = poohText;
+        }
+        else
+        {
+            talkText = dialogueText;
+        }
+
+        talkText.text = sentence;
+        talkText.maxVisibleCharacters = 0;
+        for (float t = 0; talkText.maxVisibleCharacters < sentence.Length; t += Time.deltaTime)
+        {
+            talkText.maxVisibleCharacters = (int)(t * textSpeed);
 
             if (input && !oldInput)
             {
                 oldInput = input;
-                dialogueText.maxVisibleCharacters = sentence.Length;
+                talkText.maxVisibleCharacters = sentence.Length;
             }
             yield return null;
         }
@@ -107,7 +134,14 @@ public class DialogueController : MonoBehaviour
         if (isDialogueOn)
         {
             Debug.Log("Dialogue Ended");
-            LeanTween.scaleY(dialoguePanel, 0, 0.2f);
+            if (isPooh)
+            {
+                LeanTween.scaleY(dialogueBubble, 0, 0.2f);
+            }
+            else
+            {
+                LeanTween.scaleY(dialoguePanel, 0, 0.2f);
+            }
             EndDialogueFunction.Invoke();
             isDialogueOn = false;
         }

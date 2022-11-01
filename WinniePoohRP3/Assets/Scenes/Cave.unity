@@ -1173,6 +1173,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8725293509003712179, guid: c8efae192a1bb0842b3bf213d10899f7, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8efae192a1bb0842b3bf213d10899f7, type: 3}
 --- !u!224 &397852795 stripped
@@ -1191,6 +1195,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &397852797 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8479346773752106500, guid: c8efae192a1bb0842b3bf213d10899f7, type: 3}
+  m_PrefabInstance: {fileID: 397852794}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &397852798 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5365489764605877692, guid: c8efae192a1bb0842b3bf213d10899f7, type: 3}
+  m_PrefabInstance: {fileID: 397852794}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &414027946 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3722676588504330039, guid: 53035bf68d7aa0b4eb01c10963fa0fc2, type: 3}
@@ -1468,6 +1488,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2083414729}
     m_Modifications:
+    - target: {fileID: 3558910314061870616, guid: 51b5652c1743a05499fc484920383f88, type: 3}
+      propertyPath: poohText
+      value: 
+      objectReference: {fileID: 397852797}
+    - target: {fileID: 3558910314061870616, guid: 51b5652c1743a05499fc484920383f88, type: 3}
+      propertyPath: dialogueBubble
+      value: 
+      objectReference: {fileID: 397852798}
     - target: {fileID: 3558910314061870617, guid: 51b5652c1743a05499fc484920383f88, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2693,16 +2721,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2064229582}
     - target: {fileID: 1577994624609505174, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
+      propertyPath: isPoohTalking
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1577994624609505174, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
       propertyPath: dialogues.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1577994624609505174, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
       propertyPath: dialogues.Array.data[0]
-      value: Bleehhhh
+      value: "Oh bother\u2026 my tummy aches\u2026 "
       objectReference: {fileID: 0}
     - target: {fileID: 1577994624609505174, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
       propertyPath: dialogues.Array.data[1]
-      value: I knew this tasted fishy
+      value: "My tummy aches\u2026 "
       objectReference: {fileID: 0}
     - target: {fileID: 1577994624609505174, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
       propertyPath: dialogues.Array.data[2]
@@ -5364,16 +5396,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: e2b692acc99ee3740aae28c9f30b94a0, type: 3}
     - target: {fileID: 1577994624609505174, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
+      propertyPath: isPoohTalking
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1577994624609505174, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
       propertyPath: dialogues.Array.size
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1577994624609505174, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
       propertyPath: dialogues.Array.data[0]
-      value: 'Ooooh this is tastey honey '
+      value: Oh lots and lots of pots and pots of this sticky, licky stuff! Yummy!
       objectReference: {fileID: 0}
     - target: {fileID: 1577994624609505174, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
       propertyPath: dialogues.Array.data[1]
-      value: I probably need to fight someone to get out of this cave
+      value: I wonder if I can climb out a rabbit hole?
       objectReference: {fileID: 0}
     - target: {fileID: 1577994624609505174, guid: f0baff6c7dabd344ba3cb0ed697f6fdf, type: 3}
       propertyPath: dialogues.Array.data[2]

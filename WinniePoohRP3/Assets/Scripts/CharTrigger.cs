@@ -10,6 +10,7 @@ public class CharTrigger : MonoBehaviour
     [TextArea(5, 10)]
     public string[] dialogues;
     public bool isEvil;
+    public bool isPoohTalking;
     public GameObject cutscenePanel;
     private DialogueController dialogueScript;
     // Start is called before the first frame update
@@ -26,7 +27,15 @@ public class CharTrigger : MonoBehaviour
 
     public void Talk()
     {
-        DialogueManager.instance.PlayDialogue(nameDia, imageDia, dialogues);
+        if (isPoohTalking)
+        {
+            DialogueManager.instance.PlayDialogue(nameDia, imageDia, dialogues, true);
+
+        }
+        else
+        {
+            DialogueManager.instance.PlayDialogue(nameDia, imageDia, dialogues, false);
+        }
         if (isEvil)
         {
             dialogueScript.EndDialogueFunction.AddListener(() => cutscenePanel.SetActive(true));
