@@ -26,8 +26,8 @@ public class DialogueManager : MonoBehaviour
         isDialogueOn = dialogueScript.isDialogueOn;
     }
 
-    public void PlayDialogue(string name, Sprite image, string[] dialogue, bool isPooh)
+    public void PlayDialogue(string name, Sprite image, string[] dialogue, bool isPooh, AudioClip[] clips)
     {
-        dialogueScript.StartDialogue(name, image, dialogue, isPooh);
+        dialogueScript.StartDialogue(name, image, dialogue, isPooh, clips);
     }
 }

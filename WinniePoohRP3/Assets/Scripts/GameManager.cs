@@ -28,6 +28,7 @@ public class GameManager : MonoBehaviour
     //public bool isTimerOn;
     public GameObject notificationText;
     public GameObject spawner;
+    private AudioSource collectSound;
 
     private void Awake()
     {
@@ -44,6 +45,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        collectSound = gameObject.GetComponent<AudioSource>();
         int holeNum = PlayerPrefs.GetInt("HoleNumber", 0);
         PlayerPrefs.SetInt("DifficultyLevel", holeNum);
         difficultyLevel = PlayerPrefs.GetInt("DifficultyLevel", 1);
@@ -117,6 +119,7 @@ public class GameManager : MonoBehaviour
 
     public void CollectCarrot()
     {
+        collectSound.Play();
         carrotCount++;
         for (int i = 0; i < carrotCount; i++)
         {

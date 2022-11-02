@@ -12,6 +12,7 @@ public class CharTrigger : MonoBehaviour
     public bool isEvil;
     public bool isPoohTalking;
     public GameObject cutscenePanel;
+    public AudioClip[] VOclips;
     private DialogueController dialogueScript;
     // Start is called before the first frame update
     void Start()
@@ -29,12 +30,12 @@ public class CharTrigger : MonoBehaviour
     {
         if (isPoohTalking)
         {
-            DialogueManager.instance.PlayDialogue(nameDia, imageDia, dialogues, true);
+            DialogueManager.instance.PlayDialogue(nameDia, imageDia, dialogues, true, VOclips);
 
         }
         else
         {
-            DialogueManager.instance.PlayDialogue(nameDia, imageDia, dialogues, false);
+            DialogueManager.instance.PlayDialogue(nameDia, imageDia, dialogues, false, VOclips);
         }
         if (isEvil)
         {

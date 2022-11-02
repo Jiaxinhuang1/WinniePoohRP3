@@ -25,6 +25,9 @@ public class DialogueController : MonoBehaviour
     public bool isDialogueOn;
     private bool isRunning;
     public float textSpeed;
+    private int clipNum;
+    private AudioClip[] VOclips;
+    public AudioSource VOsource;
 
     public UnityEvent EndDialogueFunction;
 
@@ -48,8 +51,10 @@ public class DialogueController : MonoBehaviour
         }
     }
 
-    public void StartDialogue(string name, Sprite image, string[] dialogue, bool isPoohTalking)
+    public void StartDialogue(string name, Sprite image, string[] dialogue, bool isPoohTalking, AudioClip[] clips)
     {
+        VOclips = clips;
+        clipNum = 0;
         if (isPoohTalking)
         {
             isPooh = true;
@@ -83,7 +88,7 @@ public class DialogueController : MonoBehaviour
 
     public void DisplayNextSentence()
     {
-        if (!isRunning)
+        if (!isRunning && !VOsource.isPlaying)
         {
             oldInput = input;
 
@@ -92,10 +97,17 @@ public class DialogueController : MonoBehaviour
                 EndDialogue();
                 return;
             }
-
             string sentence = sentences.Dequeue();
             StopAllCoroutines();
             StartCoroutine(TypeSentence(sentence));
+
+            //Play the voice over clips
+            VOsource.clip = VOclips[clipNum];
+            VOsource.Play();
+            if (clipNum < VOclips.Length - 1)
+            {
+                clipNum++;
+            }
         }
     }
 
@@ -117,15 +129,16 @@ public class DialogueController : MonoBehaviour
         for (float t = 0; talkText.maxVisibleCharacters < sentence.Length; t += Time.deltaTime)
         {
             talkText.maxVisibleCharacters = (int)(t * textSpeed);
-
+            /*
             if (input && !oldInput)
             {
                 oldInput = input;
                 talkText.maxVisibleCharacters = sentence.Length;
             }
+            */
             yield return null;
         }
-
+        //VOsource.Stop();  Stop once all the text is finished ()
         isRunning = false;
 
     }
