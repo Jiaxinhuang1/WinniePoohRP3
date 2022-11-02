@@ -295,8 +295,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -442, y: -226}
-  m_SizeDelta: {x: 673, y: 144.5166}
+  m_AnchoredPosition: {x: -442, y: -276.76974}
+  m_SizeDelta: {x: 673, y: 172.0728}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &260889567
 MonoBehaviour:
@@ -831,8 +831,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 356, y: 29}
-  m_SizeDelta: {x: 1220.158, y: 304.938}
+  m_AnchoredPosition: {x: 499.76562, y: 29}
+  m_SizeDelta: {x: 932.6267, y: 304.938}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &572317990
 MonoBehaviour:
@@ -856,15 +856,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: a Winnie the Pooh story
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ae37d5339813e7f47866c76036c75f31, type: 2}
-  m_sharedMaterial: {fileID: -3564222100761102122, guid: ae37d5339813e7f47866c76036c75f31, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7b6769d66e7e72943b47f00386ad1074, type: 2}
+  m_sharedMaterial: {fileID: -8478744721831262382, guid: 7b6769d66e7e72943b47f00386ad1074, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4279440292
-  m_fontColor: {r: 0.6415094, g: 0.07504447, b: 0.07504447, a: 1}
+    rgba: 4279111298
+  m_fontColor: {r: 0.509434, g: 0.0557494, b: 0.0557494, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 2
   m_fontColorGradient:
@@ -1357,8 +1357,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -441.99997, y: -32}
-  m_SizeDelta: {x: 673, y: 144.5166}
+  m_AnchoredPosition: {x: -441.99997, y: -63}
+  m_SizeDelta: {x: 673, y: 172.0728}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &986325293
 MonoBehaviour:
