@@ -70,8 +70,11 @@ public class PointTriggers : MonoBehaviour
             this.gameObject.transform.GetChild(0).gameObject.SetActive(true);
             if (needsTimer)
             {
-                timeSlider.gameObject.SetActive(true);
-                StartTimer();
+                if (!DialogueManager.instance.isDialogueOn)
+                {
+                    timeSlider.gameObject.SetActive(true);
+                    StartTimer();
+                }
             }
         }
     }
